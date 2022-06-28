@@ -9,7 +9,7 @@
 
 ## 📝 Web publishing
 * HTML5 
-    * [Web Page Basic Structure](https://github.com/zhzkdls/TIL/blob/main/HTML/Step01/Basic.md)
+    * [STEP.01](https://github.com/zhzkdls/TIL/blob/main/HTML/Step01.md)
     * [STEP.02](https://github.com)
     * [STEP.03](https://github.com)
     * [STEP.04](https://github.com)
