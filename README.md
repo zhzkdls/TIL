@@ -8,25 +8,25 @@
 ## 📌 목차
 
 ## 📝 Web publishing
-* HTML5  준비중
-    * [STEP.01](https://github.com)
-    * [STEP.01](https://github.com)
-    * [STEP.01](https://github.com)
-    * [STEP.01](https://github.com)
-    * [STEP.01](https://github.com)
+* HTML5 
+    * [Web Page Basic Structure](https://github.com/zhzkdls/TIL/blob/main/HTML/Step01/Basic.md)
+    * [STEP.02](https://github.com)
+    * [STEP.03](https://github.com)
+    * [STEP.04](https://github.com)
+    * [STEP.05](https://github.com)
   
     
 * CSS3  준비중
     * [STEP.01](https://github.com)
-    * [STEP.01](https://github.com)
-    * [STEP.01](https://github.com)
-    * [STEP.01](https://github.com)
+    * [STEP.02](https://github.com)
+    * [STEP.03](https://github.com)
+    * [STEP.04](https://github.com)
 
 * JAVASCRIPT  준비중
     * [STEP.01](https://github.com)
-    * [STEP.01](https://github.com)
-    * [STEP.01](https://github.com)
-    * [STEP.01](https://github.com)
+    * [STEP.02](https://github.com)
+    * [STEP.03](https://github.com)
+    * [STEP.04](https://github.com)
   
 
 ## 📝 Front-End

@@ -21,9 +21,6 @@
 앞서 작성한 `head`태그에 `Style` 태그를 사용하여 `h1` 태그에 색깔과 바탕 색깔을 사용하였다.
 
 ```html
-<!-- 1번 코드 -->
-<!DOCTYPE html>
-<html lang="ko">
 <head>
 <title>HTML5 Basic</title>
     <style>
@@ -36,7 +33,6 @@
 <body>
     <h1>Hello World..!</h1>
 </body>
-</html>
 ```
 
 ---
@@ -46,9 +42,6 @@
 `head`태그에 `link` 태그를 사용해 외부 스타일시트를 불러오도록 수정합니다. 
 
 ```html
-<!-- 1번 코드 -->
-<!DOCTYPE html>
-<html>
 <head>
     <title>HTML5 Basic</title>
     <link rel="stylesheet" href="Style.css">
@@ -58,12 +51,11 @@
     <h1 title="header">안녕하세요</h1> 
     <img src="image.png" alt="">
 </body>
-</html>
+
 ```
 `Style.css`파일
 
 ```css
-/* 2번 코드 */
 h1 {
     color: rgb(28, 127, 46);
     background: wheat;
@@ -76,9 +68,7 @@ h1 {
 첫번째 `script`는 화면에 바로 Hello JavaScript .. !가 출혁하게 되고, 두번째 `script`는 `alert`태그를 사용하여 화면에 경고창이 뜨게 된다.
 
 ```html
-<!-- 1번 코드 -->
-<!DOCTYPE html>
-<html>
+
 <head>
     <title>HTML5 Basic</title>
     <script>
@@ -91,7 +81,5 @@ h1 {
         alert('안녕하세요 콩이 입니다.')
     </script>
 </head>
-<body>
-</body>
-</html>
+
 ```
