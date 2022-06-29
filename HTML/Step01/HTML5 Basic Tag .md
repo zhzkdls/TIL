@@ -96,3 +96,29 @@ HTML 태그 내부에 공백 3개를 연속으로 입력한 후 파일을 실행
 ```
 
 ---
+## 📍 07 - 다양한 글자 모양
+
+`b`태그는 굵은 글자, `i`태그는 기울어진 글자, `small`태그는 작은 글자, `sub`태그는 아래 첨자, `sup`태그는 위 첨자, `ins`태그는 밑줄 글자, `del`태그는 취소선이 그어진 글자입니다. 그리고 `hr`태그는 수평줄이고, `br`태그는 줄바꿈 입니다
+
+```html
+<body>
+    <h1><b>Lorem ipsum dolor sit amet</b></h1>
+    <h1><i>Lorem ipsum dolor sit amet</i></h1>
+    <h1><small>Lorem ipsum dolor sit amet</small></h1>
+    <h1>Lorem ipsum dolor <sub> sit amet</sub></h1>
+    <h1>Lorem ipsum dolor <sup> sit amet</sup></h1>
+    <h1><ins>Lorem ipsum dolor sit amet</ins></h1>
+    <h1><del>Lorem ipsum dolor sit amet</del></h1>
+    <hr>
+    <b>Lorem ipsum dolor sit amet</b><br>
+    <i>Lorem ipsum dolor sit amet</i><br>
+    <small>Lorem ipsum dolor sit amet</small><br>
+    Lorem ipsum dolor <sub> sit amet</sub><br>
+    Lorem ipsum dolor <sup> sit amet</sup><br>
+    <ins>Lorem ipsum dolor sit amet</ins><br>
+    <del>Lorem ipsum dolor sit amet</del><br>
+</body>
+```
+
+---
+
