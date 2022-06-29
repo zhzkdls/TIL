@@ -1,4 +1,4 @@
-## 📍 section01 - 2 - HTML5 글자 태그
+## 📝 section01 - 2 - HTML5 글자 태그
 
 ## 📍 01 - 제목 표현
 
