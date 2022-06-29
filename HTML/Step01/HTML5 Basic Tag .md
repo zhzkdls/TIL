@@ -63,15 +63,35 @@ HTML 태그 내부에 공백 3개를 연속으로 입력한 후 파일을 실행
 ```
 
 ---
-## 📍 05 - 하이퍼링크 설정
+## 📍 05 - 특정 웹 페이지에 연결하기
 
-`a`태그
+`a`태그를 사용해 특정 웹 페이지나 웹 페이지 내부의 특정 위치로 이동하는 링크를 생성한 후 하이퍼링크를 설정한 글자를 클릭하면 해당 웹 페이지로 이동합니다.
 
 ```html
 <body>
     <a href="http://hanb.co.kr">한빛미디어</a><br>
     <a href="http://naver.com/">네이버</a><br>
     <a href="http://daum.com/">다음</a><br>
+</body>
+```
+
+---
+## 📍 06 - 웹 페이지 내부에 연결하기
+
+웹 페이지 내부의 특정 태그로 이동하려면 `id` 속성을 추가로 사용합니다. 우선 `h1` 태그에 `id` 속성을 입력합니다. 이어서 `a` 태그의 `href` 속성에 `#id 속성`형태의 문자열을 입력합니다. 파일을 실행해서 `Alpha` 부분 링크를 클릭하면 해당 내용으로 이동합니다. `p`태그에 입력되는 본문은 지면상 일부만 넣었습니다.
+
+```html
+<body>
+    <a href="#alpha">Alpha 부분</a>
+    <a href="#beta">Beta 부분</a>
+    <a href="#gamma">Gamma 부분</a>
+    <hr>
+    <h1 id="alpha">Alpha</h1>
+    <p> Donec ornare leo in ipsum consectetur euismod. Sed lorem urna, adipiscing eget pharetra ullamcorper, facilisis id sapien. Phasellus ac pellentesque odio. Curabitur quis tortor vel odio dignissim congue ac sit amet nisl. Nulla placerat nibh quis mi tincidunt pretium.</p>
+    <h1 id="beta">Beta</h1>
+    <p>Sed augue arcu, aliquet ut sagittis at, luctus eget orci. Proin tristique porta sagittis. Maecenas lorem dui, elementum ut bibendum id, ullamcorper non magna. Aenean iaculis congue quam, sed faucibus urna tempor at. Nulla facilisi.</p>
+    <h1 id="gamma">Gamma</h1>
+    <p>Aenean sollicitudin justo non nibh ullamcorper eget malesuada sapien facilisis. Mauris tempus rhoncus lectus non aliquam. In tincidunt volutpat euismod.</p>
 </body>
 ```
 
