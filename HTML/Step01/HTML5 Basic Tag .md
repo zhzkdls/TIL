@@ -1,4 +1,4 @@
-## 📝 section01 - 2 - HTML5 글자 태그
+## 📝 section - 1 - HTML5 글자 태그
 
 ## 📍 01 - 제목 표현
 
@@ -117,6 +117,73 @@ HTML 태그 내부에 공백 3개를 연속으로 입력한 후 파일을 실행
     Lorem ipsum dolor <sup> sit amet</sup><br>
     <ins>Lorem ipsum dolor sit amet</ins><br>
     <del>Lorem ipsum dolor sit amet</del><br>
+</body>
+```
+
+---
+## 📝 section - 2 - HTML5 목록 태그
+
+## 📍 01 - 목록 태그 활용
+
+목록 태그 `ul`을 사용해 순서가 **없는** 기본 목록을 생성합니다. 
+
+```html
+<body>
+  <ul>
+    <li>사과</li>
+    <li>바나나</li>
+    <li>오렌지</li>
+  </ul>
+</body>
+```
+목록 태그 `ul`을 `ol` 태그로 바꾸어 순서가 **있는** 기본 목록을 생성합니다. 
+
+```html
+<body>
+  <ol>
+    <li>사과</li>
+    <li>바나나</li>
+    <li>오렌지</li>
+  </ol>
+</body>
+```
+목록 태그 `ul`와 `ol` 태그를 사용하여 **중첩** 목록을 생성합니다. 
+
+```html
+<body>
+  <ul>
+    <!-- 첫 번째 목록 -->
+    <li>
+      <b>과일</b>
+      <ol>
+        <li>사과</li>
+        <li>바나나</li>
+        <li>오렌지</li>
+      </ol>
+    </li>
+    <!-- 두 번째 목록 -->
+    <li>
+      <b>채소</b>
+      <ol>
+        <li>상추</li>
+        <li>치커리</li>
+        <li>양배추</li>
+      </ol>
+    </li>
+  </ul>
+</body>
+```
+
+---
+## 📍 02 - 테이블 태그
+
+여기서는 `h1`태그는 본문이 되고 `p` 태그는 긴 글자를 사용 할 때 사용한다. 
+
+```html
+<body>
+    <h1>제목 글자</h1>
+    <p>Nulla placerat nibh quis mi tincidunt pretium.</p>
+    <p>Integer nibh tellus, tristique quis blandit quis, consequat in nunc.</p>
 </body>
 ```
 
