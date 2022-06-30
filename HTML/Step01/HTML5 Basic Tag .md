@@ -123,7 +123,7 @@ HTML 태그 내부에 공백 3개를 연속으로 입력한 후 파일을 실행
 ---
 ## 📝 section - 2 - HTML5 목록 태그
 
-## 📍 01 - 목록 태그 활용
+## 📍 01 - 메뉴 만둘기 
 
 목록 태그 `ul`을 사용해 순서가 **없는** 기본 목록을 생성합니다. 
 
@@ -175,17 +175,98 @@ HTML 태그 내부에 공백 3개를 연속으로 입력한 후 파일을 실행
 ```
 
 ---
-## 📍 02 - 테이블 태그
+## 📝 section - 3 - HTML5 테이블 태그
 
-여기서는 `h1`태그는 본문이 되고 `p` 태그는 긴 글자를 사용 할 때 사용한다. 
+## 📍 01 - 시간표 만둘기
+
+태그에 대해 설명드리겠습니다. `table`은 표 삽입이고, 표의 테두리 두께를 지정하는 `border` 속성을 가지고 있습니다. `tr`은 표에 행 상입, `th`은 표의 제목 셀 생성, `td`은 표의 일반 셀 생성입니다. 
 
 ```html
 <body>
-    <h1>제목 글자</h1>
-    <p>Nulla placerat nibh quis mi tincidunt pretium.</p>
-    <p>Integer nibh tellus, tristique quis blandit quis, consequat in nunc.</p>
+    <table border="1">
+        <thead>
+            <tr>
+                <th></th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1교시</td>
+                <td>영어</td>
+                <td>국어</td>
+                <td>과학</td>
+                <td>미술</td>
+                <td>기술</td>
+            </tr>
+            <tr>
+                <td>2교시</td>
+                <td>도덕</td>
+                <td>체육</td>
+                <td>영어</td>
+                <td>수학</td>
+                <td>사회</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 ```
 
 ---
+## 📍 02 - 행 * 열 병합 표 생성
 
+`td` 태그는 `colspan` 속성과 `rowspan` 속성을 사용해 표에서 차지하는 영역을 조절할 수 있습니다. `colspan` 속성 사용하면 영역이 가로 방향으로 늘어나고, `rowspan` 속성을 사용하면 영역이 세로 방향으로 늘어납니다. 이것은 **엑셀 등 스프레드시트에 있는 셀 병합 기능**과 유사합니다.
+
+```html
+<body>
+    <table border="1">
+        <tr>
+            <th colspan="2">지역별 홍차</th>
+        </tr>
+        <tr>
+            <th rowspan="3">중국</th>
+            <td>정산소종</td>
+        </tr>
+        <tr><td>기문</td></tr>
+        <tr><td>운남</td></tr>
+        <tr>
+            <th rowspan="4">인도 및 스리랑카</th>
+            <td>아삼</td>
+        </tr>
+        <tr><td>실론</td></tr>
+        <tr><td>다질링</td></tr>
+        <tr><td>닐기리</td></tr>
+    </table>
+</body>
+```
+
+---
+## 📝 section - 3 - HTML5 미디어 태그
+
+## 📍 01 - 이미지 삽입하기
+
+이미지를 삽입할 때는 `img`태그를 사용합니다. `src`은 이미지 경로 이고, 그 뒤에 `Penguins.jpg`이미지 파일을 경로를 설정합니다. 이떄 단어가 틀리게 되면 경로를 찾지를 못해서 사진이 안나오게 되는데 이떄 이미지가 없을때 나오는 글자 지정하게되는 `alt` 속성이 있습니다. 또한 이미지 크기를 설정해주는 태그가 있습니다. 우선 `width`은 이미지의 너비 지정, `height`은 이미지의 높이 지정합니다.
+
+```html
+<body>
+    <img src="Penguins.jpg" alt="펭귄" width="100" height="100">
+    <img src="Nothing" alt="그림이 존재하지 않습니다." width="150" height="100">
+</body>
+```
+
+---
+## 📍 02- 음악 삽입하기
+
+음악을 삽입을 하기위해선 `audio` 태그를 사용해야 합니다.
+
+```html
+<body>
+   <audio src="Kalimba.mp3" controls="controls"></audio>
+</body>
+```
+
+---
