@@ -10,38 +10,38 @@
 ## 📝 Web publishing
 * HTML5 
     * [STEP.01](https://github.com/zhzkdls/TIL/blob/main/HTML/Step01.md)
-    * [STEP.02](https://github.com)
-    * [STEP.03](https://github.com)
-    * [STEP.04](https://github.com)
-    * [STEP.05](https://github.com)
+    * [STEP.02-준비중](https://github.com)
+    * [STEP.03-준비중](https://github.com)
+    * [STEP.04-준비중](https://github.com)
+    * [STEP.05-준비중](https://github.com)
   
     
-* CSS3  준비중
-    * [STEP.01](https://github.com)
-    * [STEP.02](https://github.com)
-    * [STEP.03](https://github.com)
-    * [STEP.04](https://github.com)
+* CSS3  
+    * [STEP.01-준비중](https://github.com)
+    * [STEP.02-준비중](https://github.com)
+    * [STEP.03-준비중](https://github.com)
+    * [STEP.04-준비중](https://github.com)
 
-* JAVASCRIPT  준비중
-    * [STEP.01](https://github.com)
-    * [STEP.02](https://github.com)
-    * [STEP.03](https://github.com)
-    * [STEP.04](https://github.com)
+* JAVASCRIPT  
+    * [STEP.01-준비중](https://github.com)
+    * [STEP.02-준비중](https://github.com)
+    * [STEP.03-준비중](https://github.com)
+    * [STEP.04-준비중](https://github.com)
   
 
 ## 📝 Front-End
-* React.js 준비중
-    * [01. React](https://github.com)
+* React.js 
+    * [01. React-준비중](https://github.com)
 
 ## 📝 Back-end
-* Node.js / Express.js / Mysql 준비중
-    * [01. Node](https://github.com)
-    * [02. Express](https://github.com)
-    * [03. Mysql](https://github.com)
+* Node.js / Express.js / Mysql 
+    * [01. Node-준비중](https://github.com)
+    * [02. Express-준비중](https://github.com)
+    * [03. Mysql-준비중](https://github.com)
 
 ## 📝 자격증 준비
-* 정보처리기사 준비중
-    * [정처기](https://github.com)
+* 정보처리기사 
+    * [정처기-준비중](https://github.com)
 
 <!-- 2. **TIL repo를 본인 계정에 fork** -->
 
