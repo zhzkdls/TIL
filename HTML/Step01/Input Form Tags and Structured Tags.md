@@ -23,9 +23,22 @@
 </body>
 ```
 
+**`GET` 방식은 주소에 데이터를 입력해서 전달**, **`POST` 방식은 `GET` 방식과 달리 비밀스럽게 데이터를 전달합니다**. `GET`은 주소에 데이터를 입력하므로 크기가 한정되어 있는데, `POST` 방식은 물건을 택배를 부치듯이 데이터를 별도로 전송하기 떄문에 용량에 제한이 없습니다.
+
 ```html
+<!-- GET 전송 방식 -->
 <body>
-    <form>
+    <form method="get">
+        <input type="text" name="search">
+        <input type="submit">
+    </form>
+</body>
+```
+
+```html
+<!-- POST 전송 방식 -->
+<body>
+    <form method="post">
         <input type="text" name="search">
         <input type="submit">
     </form>
@@ -33,18 +46,34 @@
 ```
 
 ---
-## 📍 02- 음악 삽입하기
+## 📍 02- 기본 입력 양식 태그
 
-음악을 삽입을 하기위해선 `audio` 태그를 사용해야 합니다. `audio` 태그는 HTML5에 추가된 기능이므로 **인터넷 익스플로러 8** 이하에서는 사용 할 수 없습니다. 그리고 `audio` 태그와 `video` 태그는 내용물을 가질 수 있는 태그입니다.
+`input` 태그에 `type` 속성을 지정해서 다양한 종류의 기본 입력 양식을 생성 할 수있습니다.
 
 ```html
 <body>
-   <audio src="Kalimba.mp3" controls="controls"></audio>
+    <form>
+        <!-- 사용자가 입력하는 입력 양식 -->
+        <input type="text" name="text" value="text"><br>
+        <input type="password" name="password" value="password"><br>
+        <input type="file" name="file" value="file"><br>
+        <input type="checkbox" name="checkbox" value="checkbox"><br>
+        <input type="radio" name="radio" value="radio"><br>
+
+        <!-- 보이지 않는 입력 양식 -->
+        <input type="hidden" name="hidden" value="hidden"><br>
+
+        <!-- 버튼 -->
+        <input type="button" value="button"><br>
+        <input type="reset" value="reset"><br>
+        <input type="submit" value="submit"><br>
+        <input type="image" src="https://placehold.it/100x100">
+    </form>
 </body>
 ```
 
 ---
-## 📍 03- 동영상 삽입하기
+## 📍 03- 간단한 입력 양식 생성
 
 동영상을 삽입을 하기위해선 `video` 태그를 사용해야 합니다.
 
