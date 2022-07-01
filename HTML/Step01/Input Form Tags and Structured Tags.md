@@ -75,15 +75,54 @@
 ---
 ## 📍 03- 간단한 입력 양식 생성
 
-동영상을 삽입을 하기위해선 `video` 태그를 사용해야 합니다.
+라디오 버튼의 name 속성을 사용하면 여러 대상 중 하나만 선택하는 형태를 구현할 수 있습니다. 코드를 실행하고 라디오 버튼 2개를 번갈아 가며 클릭합니다. 한 번에 하나만 선택할수 있는것을 알 수 있습니다.
 
 ```html
 <body>
-    <video width="320" controls="controls" poster="http://placehold.it/320x180">
-        <source src="Wildlife.mp4" type="video/mp4">
-        <source src="Wildlife.webm" type="video/webm">
-    </video>
+    <form>
+        <table>
+            <tr>
+                <td><label for="username">이름</label></td>
+                <td><input id="username" type="text" name="username"></td>
+            </tr>
+            <tr>
+                <td>성별</td>
+                <td>
+                    <input id="man" type="radio" name="gender" value="m">
+                    <label for="man">남자</label>
+                    <input id="woman" type="radio" name="gender" value="w">
+                    <label for="woman">여자</label>
+                </td>
+            </tr>
+        </table>  
+        <input type="submit" value="가입">
+    </form>
 </body>
+```
+
+---
+## 📍 04- 선택 가능한 입력 양식
+
+**한 항목만 선택하기**는  
+
+```html
+<body>
+    <!--한 항목만 선택하기-->
+    <select>
+        <option>김밥</option>
+        <option>떡볶이</option>
+        <option>순대</option>
+        <option>어묵</option>
+    </select>
+
+    <!--여러 항목 선택하기-->
+    <select multiple="multiple">
+        <option>김밥</option>
+        <option>떡볶이</option>
+        <option>순대</option>
+        <option>어묵</option>
+    </select>
+</body>>
 ```
 
 ---
