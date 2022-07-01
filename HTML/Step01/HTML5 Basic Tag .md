@@ -270,3 +270,17 @@ HTML 태그 내부에 공백 3개를 연속으로 입력한 후 파일을 실행
 ```
 
 ---
+## 📍 03- 동영상 삽입하기
+
+동영상을 삽입을 하기위해선 `video` 태그를 사용해야 합니다.
+
+```html
+<body>
+    <video width="320" controls="controls" poster="http://placehold.it/320x180">
+        <source src="Wildlife.mp4" type="video/mp4">
+        <source src="Wildlife.webm" type="video/webm">
+    </video>
+</body>
+```
+
+---
