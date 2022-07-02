@@ -12,21 +12,15 @@
     * [HTML5 웹 프로그래밍 입문](https://github.com/zhzkdls/TIL/blob/main/Assets/Study.md)
     * [STEP.02-준비중](https://github.com)
     * [STEP.03-준비중](https://github.com)
-    * [STEP.04-준비중](https://github.com)
-    * [STEP.05-준비중](https://github.com)
   
     
 * CSS3  
     * [STEP.01-준비중](https://github.com)
     * [STEP.02-준비중](https://github.com)
-    * [STEP.03-준비중](https://github.com)
-    * [STEP.04-준비중](https://github.com)
 
 * JAVASCRIPT  
     * [STEP.01-준비중](https://github.com)
     * [STEP.02-준비중](https://github.com)
-    * [STEP.03-준비중](https://github.com)
-    * [STEP.04-준비중](https://github.com)
   
 
 ## 📝 Front-End
@@ -42,9 +36,10 @@
 ## 📝 자격증 준비
 * 정보처리기사 
     * [정처기-준비중](https://github.com)
-
-<!-- 2. **TIL repo를 본인 계정에 fork** -->
-
+    
+## 📝 CS 공부
+* 준비중 
+    * [01-준비중](https://github.com)
 
 
 
