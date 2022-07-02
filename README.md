@@ -9,7 +9,7 @@
 
 ## 📝 Web publishing
 * HTML5 
-    * [STEP.01](https://github.com/zhzkdls/TIL/blob/main/HTML/Step01.md)
+    * [웹 프로그래밍 입문](https://github.com/zhzkdls/TIL/blob/main/HTML/Step01.md)
     * [STEP.02-준비중](https://github.com)
     * [STEP.03-준비중](https://github.com)
     * [STEP.04-준비중](https://github.com)
