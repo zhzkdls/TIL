@@ -116,7 +116,7 @@
     </select>
 </body>>
 ```
-**여러 항목 선택하기=>**
+**여러 항목 선택하기=>** 여러 항목을 선택하려면 `select` 태그의 `multiple` 속성을 사용합니다. 스마트폰에서 어느 정도 예쁘게 나오지만 일반 데스트톱 웹 페이지에서는 잘 사용하지 않습니다.
 
 ```html
 <body>
@@ -128,6 +128,26 @@
         <option>어묵</option>
     </select>
 </body>>
+```
+
+**선택 옵션 묶기=>** `optgroup` 태그를 사용해 선택 옵션을 그룹으로 묶을 수 있습니다.
+
+```html
+<body>
+    <!--선택 옵션 묶기-->
+    <select>
+        <optgroup label="HTML5">
+            <option>태그</option>
+            <option>속성</option>
+            <option>옵션</option>
+        </optgroup>
+        <optgroup label="CSS3">
+            <option>마진</option>
+            <option>패딩</option>
+            <option>컬러</option>
+        </optgroup>
+    </select>
+</body>
 ```
 
 ---
