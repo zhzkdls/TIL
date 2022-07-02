@@ -2,8 +2,6 @@
 > `태그`, `요소`, `속성`의 의미를 이해하고, **HTML태그, CSS, 자바스크립트**를 사용해 웹 페이지를 작성하는 방법을 익힙니다.  <br> <br>
 
 
-## 📌 목차
-
 ## 📝 HTML5
  #### [section-01][📌](https://github.com/zhzkdls/TIL/blob/main/HTML/Step01/Web%20Page%20Basic%20Structure.md)
    * 웹 패이지 기본 구조와 작성 방법
