@@ -255,3 +255,29 @@
 ```
 
 ---
+## 📝 section - 03 - 블로그
+
+## 📍 01- 레이아웃 구성
+
+일반 블로그의 레이아웃을 단순화시키고 기능별로 영역을 분리합니다. 그런 다음 행을 기준으로 영역을 분리합니다. 행을 분리할 때는 가로로 선을 그릴 수 있는 부분을 분리합면 됩니다.
+
+```html
+<body>
+    <!-- 전체를 감싸는 태그 -->
+    <div id="page-wrapper">
+        <!-- 헤더 -->
+        <header id="main-header"></header>
+        <!-- 내비게이션 -->
+        <nav id="main-navigation"></nav>
+        <!-- 본문 -->
+        <div id="content">
+            <!-- 본문 좌측 영역 -->
+            <section id="main-section"></section>
+            <!-- 본문 우측 영역 -->
+            <aside id="main-aside"></aside>
+        </div>
+        <!-- 푸터 -->
+        <footer id="main-footer"></footer>
+    </div>
+</body>
+```
