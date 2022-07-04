@@ -222,3 +222,36 @@
 ```
 
 ---
+## 📍 02- 시맨틱 태그를 사용한 레이아웃 구성
+
+`header` 태그는 머리말(페이지 제목, 페이지 소개), `nav` 태그는 하이퍼링크들을 모아 둔 내비게이션, `aside` 태그는 본문 흐름에 벗어나는 노트나 팁, `section` 태그는 문서의 장이나 절에 해당하는 내용, `article` 태그는 본문과 독립적인 콘텐츠 영역, `footer` 태그는 꼬리말(저자나 저작권 정보)를 입력합니다.
+
+```html
+<body>
+    <header>
+        <h1>HTML5 기본</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">메뉴 - 1</a></li>
+            <li><a href="#">메뉴 - 2</a></li>
+            <li><a href="#">메뉴 - 3</a></li>
+        </ul>
+    </nav>
+    <section>
+        <article>
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rutrum pretium elit, at iaculis dui congue facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue lectus, sagittis quis commodo commodo, congue a nibh. Donec ornare leo in ipsum consectetur euismod. Sed lorem urna, adipiscing eget pharetra ullamcorper, facilisis id sapien. Phasellus ac pellentesque odio. Curabitur quis tortor vel odio dignissim congue ac sit amet nisl. Nulla placerat nibh quis mi tincidunt pretium.</p>
+        </article>
+        <article>
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rutrum pretium elit, at iaculis dui congue facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue lectus, sagittis quis commodo commodo, congue a nibh. Donec ornare leo in ipsum consectetur euismod. Sed lorem urna, adipiscing eget pharetra ullamcorper, facilisis id sapien. Phasellus ac pellentesque odio. Curabitur quis tortor vel odio dignissim congue ac sit amet nisl. Nulla placerat nibh quis mi tincidunt pretium.</p>
+        </article>
+    </section>
+    <footer>
+        <address>서울특별시 강서구 내발산동</address>
+    </footer>
+</body>
+```
+
+---
