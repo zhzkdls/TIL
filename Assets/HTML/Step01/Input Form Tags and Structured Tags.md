@@ -193,3 +193,32 @@
 ```
 
 ---
+## 📝 section - 02 - 공간 분할 태그
+
+## 📍 01 - 공간 분할 방법
+
+**공간을 블록 형식으로 분할하기** 👉🏽 div 태그를 사용해 공간을 분할하면 각 태그가 한 행을 모두 차지합니다. 이를 블록 형식이라고 합니다.
+
+```html
+<body>
+    <div>div 태그 - block 형식</div>
+    <div>div 태그 - block 형식</div>
+    <div>div 태그 - block 형식</div>
+    <div>div 태그 - block 형식</div>
+    <div>div 태그 - block 형식</div>
+</body>
+```
+
+**공간을 인라인 형식으로 분할하기** 👉🏽 코드를 실행하면 각 태그는 자신의 **글자 크기**만큼 영역을 차지하면, `왼쪽`에서 `오른쪽`으로 쌓입니다. 이를  인라인 형식이라고 합니다.
+
+```html
+<body>
+    <span>span 태그 - inline 형식</span>
+    <span>span 태그 - inline 형식</span>
+    <span>span 태그 - inline 형식</span>
+    <span>span 태그 - inline 형식</span>
+    <span>span 태그 - inline 형식</span>
+</body>
+```
+
+---
