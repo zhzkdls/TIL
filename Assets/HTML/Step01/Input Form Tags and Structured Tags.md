@@ -176,4 +176,20 @@
 </body>
 ```
 
+**`textarea` 태그 주의 사항=>** 글자를 여러 줄 입력할 때 사용하는 `textarea` 태그를 예쁘게 정렬하려고 다음 **첫 번째 예)** 처럼 작성하는 경우가 많습니다. 하지만 이렇게 입력하면 왼쪽의 들여쓰기가 입력 양식 내부에 출력됩니다. **두번째 예)** 쳐럼 작성해야 정상적으로 출력이 됩니다.
+
+```html
+<body>
+    <h4>잘못된 형태</h4>
+        <textarea>
+            Textarea 태그
+            Textarea 태그
+        </textarea>
+
+    <h4>올바른 형태</h4>
+        <textarea>Textarea 태그
+    Textarea 태그</textarea>
+</body>
+```
+
 ---
