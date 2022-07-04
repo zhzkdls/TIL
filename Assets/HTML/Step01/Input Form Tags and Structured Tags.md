@@ -363,7 +363,7 @@
             </aside>
         </div>
         <footer id="main-footer">
-            <a href="#">IT초코하마</a>
+            <a href="#">IT개발자</a>
         </footer>
     </div>
 </body>
