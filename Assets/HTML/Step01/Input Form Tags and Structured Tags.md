@@ -151,3 +151,29 @@
 ```
 
 ---
+## 📍 05- 연관 있는 입력 양식 그룹으로 묶기
+
+`fieldset` 태그와 `legend` 태그를 사용하면 입력 양식을 그룹으로 묶고 이름을 지정할 수 있습니다. `legend` 태그는 `fieldset` 태그 내부에 사용합니다.
+
+```html
+<body>
+    <form>
+        <fieldset>
+            <legend>입력 양식</legend>
+            <table>
+                <tr>
+                    <td><label for="name">이름</label></td>
+                    <td><input id="name" type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="mail">이메일</label></td>
+                    <td><input id="mail" type="email"></td>
+                </tr>
+            </table>
+            <input type="submit">
+        </fieldset>
+    </form>
+</body>
+```
+
+---
