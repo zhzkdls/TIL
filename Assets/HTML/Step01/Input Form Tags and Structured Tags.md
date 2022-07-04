@@ -281,3 +281,92 @@
     </div>
 </body>
 ```
+
+앞에서 이미 만들어진 구성에 내용을 **추가**하였습니다.  하지만 화면을 보면 아직 덜 만들어지 모습이 보일 것이다. 실망하지 말고 이젠  css를 배워서 이 구성에 **css를 추가 하면 좋은 웹 사이트가 완성**이 된다.
+
+```html
+<body>
+    <div id="page-wrapper">
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title">종합예제01</h1>
+                <h2 class="master-description">초마아카데이</h2>
+            </hgroup>
+        </header>
+        <nav id="main-navigation">
+            <div class="pull-left">
+                <ul class="outer-menu">
+                    <li class="outer-menu-item">
+                        <span class="menu-title">초코</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="#">데이터</a> </li>
+                            <li class="inner-menu-item"><a href="#">데이터</a> </li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">하마</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="#">데이터</a> </li>
+                            <li class="inner-menu-item"><a href="#">데이터</a> </li>
+                            <li class="inner-menu-item"><a href="#">데이터</a> </li>
+                        </ul>
+                    </li>
+                    <li class="outer-menu-item">
+                        <span class="menu-title">초코하마</span>
+                        <ul class="inner-menu">
+                            <li class="inner-menu-item"><a href="#">데이터</a> </li>
+                            <li class="inner-menu-item"><a href="#">데이터</a> </li>
+                            <li class="inner-menu-item"><a href="#">데이터</a> </li>
+                            <li class="inner-menu-item"><a href="#">데이터</a> </li>
+                            <li class="inner-menu-item"><a href="#">데이터</a> </li>
+                            <li class="inner-menu-item"><a href="#">데이터</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="pull-left">
+                <div class="search-bar">
+                    <form>
+                        <input type="text" class="input-search">
+                        <input type="submit" class="input-search-submit" value="검색" />
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div id="content">
+            <section id="main-section">
+                <article>
+                    <div class="article-header">
+                        <h1 class="article-title">개요와 할용</h1>
+                        <p class="article-date">2022년 06월 19일</p>
+                    </div>
+                    <div class="article-body">
+                        <img src="http://placehold.it/420x280" alt="사진"> 
+                        <br>
+                        <p>안녕하셈~!!!</p>
+                        <br>
+                        <p>반갑습니다~!!!</p>
+                    </div>
+                </article>
+            </section>
+            <aside id="main-aside">
+                <div class="aside-list">
+                    <h3>카테고리</h3>
+                    <ul>
+                        <li><a href="#">데이터</a></li>
+                        <li><a href="#">데이터</a></li>
+                        <li><a href="#">데이터</a></li>
+                        <li><a href="#">데이터</a></li>
+                        <li><a href="#">데이터</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <footer id="main-footer">
+            <a href="#">IT초코하마</a>
+        </footer>
+    </div>
+</body>
+```
+
+---
