@@ -3,32 +3,32 @@
 <head>
     <title>CSS 선택자 종류</title>
 	<style>
-        ins {
-             color: rgb(47, 40, 40);
-             background-color: rgba(247, 194, 96, 0.595); 
-            }
+		ins {
+		     color: rgb(47, 40, 40);
+		     background-color: rgba(247, 194, 96, 0.595); 
+		    }
 
 		td {
-				color: rgb(0, 1, 1);
-				background-color: rgba(240, 254, 255, 0.995); 
-				padding-top: 10px;
-				padding-bottom: 20px;
-				padding-left: 10px;
-				padding-right: 70px;
+	     	    color: rgb(0, 1, 1);
+		    background-color: rgba(240, 254, 255, 0.995); 
+		    padding-top: 10px;
+		    padding-bottom: 20px;
+		    padding-left: 10px;
+		    padding-right: 70px;
 		   }
 		   
 		tr {
-			color: rgb(0, 1, 1);
-			background-color: rgba(34, 109, 114, 0.714); 
+		    color: rgb(0, 1, 1);
+		    background-color: rgba(34, 109, 114, 0.714); 
 	   }
     </style>
 </head>
 <body>
     <table border="1">
 		<tr>
-			<th colspan="1">종류</th>
-            <th colspan="1">형태</th>
-            <th colspan="1">사용 예</th>
+		    <th colspan="1">종류</th>
+		    <th colspan="1">형태</th>
+		    <th colspan="1">사용 예</th>
 		</tr>
 		<tr>
 			<td><ins>전체 선택자</ins></td>
@@ -67,56 +67,56 @@
 			<td>선택자[속성 ^= 값]</td>
 			<td>div[data-role ^= row]</td>
 		</tr>
-        <tr>
+		<tr>
 			<td>선택자[속성 $= 값]</td>
 			<td>div[data-role $= 9]</td>
 		</tr>
-        <tr>
+	   	<tr>
 			<td>선택자[속성 *= 값]</td>
 			<td>div[data-role *= row]</td>
 		</tr>
-        <tr>
+		<tr>
 			<td><ins>후손 선택자</ins></td>
 			<td>선택자 선택자</td>
 			<td>header h1</td>
 		</tr>
-        <tr>
+	 	<tr>
 			<td><ins>자손 선택자</ins></td>
 			<td>선텍지 > 선택자</td>
 			<td>header > h1</td>
 		</tr>
-        <tr>
+	 	<tr>
 			<td rowspan="2"><ins>반응 선택자</ins></td>
 			<td>선택자 : active</td>
 			<td>div : active</td>
 		</tr>
-        <tr>
+	 	<tr>
 			<td>선택자 : hover</td>
 			<td>div : hover</td>
 		</tr>
-        <tr>
+	 	<tr>
 			<td rowspan="4"><ins>상태 선택자</ins></td>
 			<td>선택자 : checked</td>
 			<td>input : checked</td>
 		</tr>
-        <tr>
+		<tr>
 			<td>선택자 : focus</td>
 			<td>input : focus</td>
 		</tr>
-        <tr>
+	 	<tr>
 			<td>선택자 : enabled</td>
 			<td>input : enabled</td>
 		</tr>
-        <tr>
+	 	<tr>
 			<td>선택자 : disabled</td>
 			<td>input : disabled</td>
 		</tr>
-        <tr>
+	 	<tr>
 			<td rowspan="8"><ins>구조 선택자</ins></td>
 			<td>선택자 : first-child</td>
 			<td>li : first-child</td>
 		</tr>
-        <tr>
+        	<tr>
 			<td>선택자 : last-child</td>
 			<td>li : last-child</td>
 		</tr>
