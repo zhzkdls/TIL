@@ -8,8 +8,6 @@
 
 ```html
 <head>
-    <title>CSS3 Selector Basic Page</title>
-    <!-- 가장 기초적인 스타일일 적용하기 -->
     <style>
         h1 {
              color: red;
@@ -23,15 +21,15 @@
 ```
 
 ---
-## 📍 02 - 전체 선택자와 태그 선택자
+## 📝 section - 02 - 기본 선택자
+
+## 📍 01 - 전체 선택자와 태그 선택자
 
 **전체 선택자 적용하기** 👉  전체 선택자를 사용해 모든 태그의 `color` 스타일 속성을 `red` 값으로 변경합니다. `*`은 `전체 선택자`이고 구체적으로는 HTML 페이지 내부의 태그를 모두 선택입니다. 
 
 
 ```html
 <head>
-    <title>CSS3 Selector Basic Page</title>
-    <!-- 전체 선택자 적용하기 -->
     <style>
         * { color: red; }
     </style>
@@ -47,8 +45,6 @@
 
 ```html
 <head>
-    <title>CSS3 Selector Basic Page</title>
-    <!-- 태그 선택자 적용하기 -->
     <style>
         h1 { color: red; }
         p  { color: blue; }
@@ -62,14 +58,13 @@
 ```
 
 ---
-## 📍 03 - 아이디 선택자
+## 📍 02 - 아이디 선택자
 
 공간 분할 태그에 아이디 선택자를 사용해 `id` 속성을 적용하고 레이아웃을 구성합니다.  또한 `id` 중복 선택이 가능하다 
 
 
 ```html
 <head>
-    <title>CSS3 Selector Basic Page</title>
     <style>
         #header {
             width: 800px; margin: 0 auto;
@@ -114,7 +109,175 @@
 ```
 
 ---
+## 📍 03 - 클래스 선택자
+
+**클래스 사용자를 1개 사용하기** 👉 클래스 선택자는 특정한 클래스가 있는 태그를 선택할 때 사용합니다. 웹 페이지를 개발할 때 가장 많이 사용합니다. 
 
 
+```html
+<head>
+    <style>
+        .select { color: red; }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="select">사과</li>
+        <li>바나나</li>
+        <li class="select">오렌지</li>
+        <li>감</li>
+    </ul>
+</body>
+```
 
+**클래스 선택자를 여러 개 사용하기** 👉 공백으로 구분해 클래스를 여러 개 사용할 수 있는데, `item`과 `header` 클래스가 함께 적용됩니다.
+
+```html
+<head>
+    <style>
+        .item { color: red; }
+        .header { background-color: blue; }
+    </style>
+</head>
+<body>
+    <h1 class="item header">동해물과 백두산이</h1>
+</body>
+```
+
+**클래스 속성 중복** 👉 `class` 속성은 중복될 수 있으며, `clss` 속성을 서로 다른 태그에 적용할 때는 **태그 선택자**와 **클래스 선택자**를 함께 사용해서 태그를 더 정확하게 선택할 수 있습니다.
+
+```html
+<head>
+    <!-- 정확하게 태그를 선택해서 사과만 빨간색으로 표시합니다. -->
+    <style>
+        li.select { color: red; }  
+    </style>
+</head>
+<body>
+    <h1 class="select">제목 글자</h1>
+    <ul>
+        <li class="select">사과</li>
+        <li>바나나</li>
+        <li>오렌지</li>
+        <li>감</li>
+    </ul>
+</body>
+```
+
+---
+## 📝 section - 03 - 속성 선택자
+
+## 📍 01 - 속성 선택자
+
+특정 속성과 값이 있는 태그를 선택할 때 사용합니다. 속성과 같은 **대괄호([])**를 사용해 입력합니다. `imput` 태그는 이름이 모두 같지만 `type` 속성에 따라 형태가 다릅니다. 그래서 `input` 태그를 선택할 때 속성 선택자를 많이 사용합니다. 속성 선택자를 사용해 `imput` 태그를 선택합니다.
+
+```html
+<head>
+    <style>
+        input[type="text"] { background: red; }
+        input[type="password"] { background: blue; }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text">
+        <input type="password">
+    </form>
+</body>
+```
+
+---
+## 📝 section - 04 - 후손 선택자와 자손 선택자
+
+## 📍 01 - 후손 선택자
+
+후손 선택자는 특정한 태그의 후손을 선택할 때 사용합니다.  후손 선택자를 사용해 특정한 대상의 후손이라는 것을 구별합니다. #header 태그 아래에 위치한 h1 태그에는 빨간색을 적용하고, #section 태그 아래에 위치한 h1 태그에는 주황색을 적용합니다. 
+
+```html
+<head>
+    <style>
+        #header h1  { color: red; }
+        #section h1 { color: orange; }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1 class="title">Lorem ipsum</h1>
+        <div id="nav">
+            <h1>Navigation</h1>
+        </div>
+    </div>
+    <div id="section">
+        <h1 class="title">Lorem ipsum</h1>
+        <p> Duis bibendum massa in dui interdum sed tincidunt massa eleifend.</p>
+    </div>
+</body>
+```
+
+선택자 여러 개를 함께 사용할 경우, 후손 선택자를 **(1)처럼** 활용할 때가 있습니다. 어떤 태그에 빨간색을 적용할까요?? 이 선택자는 `header` 태그의 후손인 `h1` 태그의 일반적인 `h2` 태그를 선택합니다. `header` 태그의 후손인 `h1` 태그와 `header` 태그의 후손인 `h2` 태그를 선택하고 싶다면 **(2)처럼** 사용해야 합니다. 
+
+```html
+<style>
+    #header h1, h2 { color: red; }
+</style>
+```
+
+```html
+<style>
+    #header h1, #header h2 { color: red; }
+</style>
+```
+
+---
+## 📍 02 - 자손 선택자
+
+자손 선택자는 특정한 태그의 자손을 선택할 때 사용합니다. 앞서 살펴본 후손 선택자 코드 구성이 같습니다 . **다만** `#nav` 태그 아래에 있는 `h1` 태그는 후손이기 때문에 스타일이 적용되지 않습니다.
+
+```html
+<head>
+	<style>
+		#header > h1 { color: red; }
+		#section > h1 { color: orange; }
+	</style>
+</head>
+<body>
+	<div id="header">
+		<h1 class="title">Lorem ipsum</h1>
+		<div id="nav">
+			<h1>Navigation</h1>
+		</div>
+	</div>
+	<div id="section">
+		<h1 class="title">Lorem ipsum</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	</div>
+</body>
+```
+
+`table` 태그의 요소를 선택할 떄는 **자손** 선택자 사용을 추천하지 않습니다. 코드를 실행하게 되면 대부분 `tr` 태그에 빨간색이 적용된다고 예상하지만, 스타일 속성은 적용되지 않습니다. 색상을 적용하려먼 선택자 **table > tbody > tr > th** 를 입력해야 합니다. 
+
+```html
+<head>
+	<style>
+		table > tr > th {
+            color: red;
+        }
+	</style>
+</head>
+<body>
+	<table border="1">
+		<tr>
+            <td>이름<td>    
+            <td>지역<td>    
+		</tr>
+            
+		<tr>
+            <td>펭수<td>    
+            <td>부산광역시 해운대구<td> 
+		</tr>
+	</table>
+</body>
+```
+
+---
 
