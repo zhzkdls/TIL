@@ -299,3 +299,66 @@
 ```
 
 ---
+## 📍 02 - 상태 선택자
+
+상태 선택자는 입력 양식의 선택할 때 사용합니다. `HTML5`에서 주석을 **<!-- 주석 -->** 형태로 작성했지만, 스타일시트에서는 **/*주석*/** 형태로 작성합니다. 이후에 나오는 자바스크립트의 여러 행 주석과 형태가 갑습니다. 하지만 자바스크립트의 한 줄 주석은 스타일시트에서는 사용할 수 없으므로 주의해야 합니다.
+
+```html
+<head>
+    <style>
+        /* input 태그가 사용 가능할 경우에
+           background-color 속성에 white 키워드를 적용합니다. */
+        input:enabled { background-color: white; }
+
+        /* input 태그가 사용 불가능할 경우에
+           background-color 속성에 gray 키워드를 적용합니다. */
+        input:disabled { background-color: gray; }
+
+        /* input 태그에 초점이 맞추어진 경우에
+           background-color 속성에 orange 키워드를 적용합니다. */
+        input:focus { background-color: orange; }
+    </style>
+</head>
+<body>
+    <h2>사용 가능</h2>
+    <input>
+    <h2>사용 불가능</h2>
+    <input disabled="disabled"/>
+</body>
+```
+
+---
+## 📍 03 - 구조 선택자
+
+구조 선택자를 사용해 **홀수**와 **짝수** 위치를 판별하고 스타일을 적용합니다. 처음 태그와 마지막 태그에는 `둥근 테두리`가 적용되고, 홀수와 짝수 번째에는 `각각 다른 색상`의 스타일이 적용됩니다. `first-child`은 형제 관계에서 첫 번째롤 등장하는 태그 선택, `last-child`은 형제 관계에서 마지막으로 등장하는 태그 선택, `nth-child(수열)` 형제 관계에서 앞으로 수열 번째 등장하는 태그 선택, `nth-last-child(수열)` 형제 관계에서 뒤에서 수열 번째 등장하는 태그 선택입니다.
+
+```html
+<head>
+    <style>
+        ul { overflow: hidden; }
+        li {
+            list-style: none;
+            float:left; padding: 15px;
+        }
+
+        li:first-child { border-radius: 10px 0 0 10px; }
+        li:last-child { border-radius: 0 10px 10px 0; }
+
+        li:nth-child(2n) { background-color: #FF0003; }
+        li:nth-child(2n+1) { background-color:#800000; }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>첫 번째</li>
+        <li>두 번째</li>
+        <li>세 번째</li>
+        <li>네 번째</li>
+        <li>다섯 번째</li>
+        <li>여섯 번째</li>
+        <li>일곱 번째</li>
+    </ul>
+</body>
+```
+
+---
