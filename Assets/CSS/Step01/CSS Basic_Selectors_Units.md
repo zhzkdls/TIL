@@ -361,4 +361,71 @@
 </body>
 ```
 
+`li > a:first-child { color: green; }`은 전체에 스타일을 적용학고, `li:first-child > a { color: red; }`은 특정한 부분을 적용합니다.  
+
+```html
+<head>
+    <style>
+        li:first-child > a { color: red; }
+    </style>
+
+    <!-- <style>
+        li > a:first-child { color: green; }
+    </style> -->
+</head>
+<body>
+    <ul>
+        <li><a href="#">주의 사항</a></li>
+        <li><a href="#">주의 사항</a></li>
+        <li><a href="#">주의 사항</a></li>
+        <li><a href="#">주의 사항</a></li>
+        <li><a href="#">주의 사항</a></li>
+    </ul>
+</body>
+```
+
+---
+## 📝 section - 06 - CSS와 SASS 비교
+
+## 📍 01 - 스타일시트 컴파일 엔진
+
+**SASS 스타일시트** 괄호를 입력할 필요가 없으며, 변수는 물론 선택자도 선택자 내부에 입력할 수 있습니다. 스타일시트 컴파일 엔진을 이용하면 **첫 번째** 처럼 작성된 `SASS` 스타일시트를 **두 번째** 처럼 일반 스타일시트로 변경할 수 있습니다.
+
+```css
+/* 첫 번쨰*/
+$gray: #fff
+$margin: 10px;
+$logo-image: url("logo.png");
+
+.header
+    .logo
+         background-image $logo.png"
+    .navigation
+        overflow: hidden
+        .menu
+            float: left;
+
+.article 
+    margin: $margin
+```
+
+```css
+/* 두 번쨰*/
+.header .logo {
+    background-image: url("logo.png");
+}
+
+.header .navigation {
+    overflow: hidden;
+}
+
+.header .navigation .menu {
+    float: left;
+}
+
+.article {
+    margin: 10px;
+}
+```
+
 ---
