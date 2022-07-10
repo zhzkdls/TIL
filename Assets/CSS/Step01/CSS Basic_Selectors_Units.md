@@ -431,3 +431,58 @@ $logo-image: url("logo.png");
 ```
 
 ---
+## 📝 section - 07 - CSS3 단위
+
+## 📍 01 - 다양한 크기의 단위 적용
+
+**2 % 단위 적용하기** 👉 `style` 태그 안에 `font-size` 를 사용하여 입력합니다. **% 단위**는 기본으로 설정된 크기를 기준으로 상대적인 크기를 지정합니다. 이떄 `100%` 초기에 설정된 크기입니다
+
+```html
+<head>
+	<title>Document</title>
+	<style>
+		p:nth-child(1) {}
+		p:nth-child(2) { font-size: 100%; }
+		p:nth-child(3) { font-size: 150%; }
+		p:nth-child(4) { font-size: 200%; }
+	</style>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet</p>
+	<p>Lorem ipsum dolor sit amet</p>
+	<p>Lorem ipsum dolor sit amet</p>
+	<p>Lorem ipsum dolor sit amet</p>
+</body>
+```
+
+**em 단위 적용하기** 👉 em은 배수를 나타내는 단위입니다. `1배=1em=100%`고, `1.5배=1.5em=150%`입니다
+
+```html
+<head>
+	<title>Document</title>
+	<style>
+		p:nth-child(1) {}
+		p:nth-child(2) { font-size: 1.0em; }
+		p:nth-child(3) { font-size: 1.5em; }
+		p:nth-child(4) { font-size: 2.0em; }
+	</style>
+</head>
+
+```
+
+**px 단위 적용하기** 👉 `%`와 `em` 단위는 크기를 상대적으로 지정하지만, `px` 단위는 크기를 절대적으로 지정합니다. 지금 살펴본 `font-size` 속성을 포함해 `width` 속성과 `height` 속성 등에 크기 단위를 적용할 수 있습니다.
+
+```html
+<head>
+	<title>Document</title>
+	<style>
+		p:nth-child(1) {}
+		p:nth-child(2) { font-size: 16px; }
+		p:nth-child(3) { font-size: 24px; }
+		p:nth-child(4) { font-size: 32px; }
+	</style>
+</head>
+
+```
+
+---
