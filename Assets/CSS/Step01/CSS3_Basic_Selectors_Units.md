@@ -482,7 +482,6 @@ $logo-image: url("logo.png");
 		p:nth-child(4) { font-size: 32px; }
 	</style>
 </head>
-
 ```
 
 ---
