@@ -72,3 +72,133 @@
 ```
 
 ---
+## 📍 03 - 박스 테두리 조정
+
+**박스 테두리 만들기** 👉 `border` 속성을 사용해 박스 테두리를 만듭니다.
+
+```html
+  <head>
+    <style>
+        .box {
+            border-width: thick;
+            border-style: dashed;
+            border-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Lorem ipsum dolor amet</h1>
+    </div>
+</body>
+```
+
+**둥근 테두리 만들기** 👉 `border-radius` 속성을 적용하면 모서리가 둥근 박스 테두리를 만듭니다.
+
+```html
+<style>
+    .box {
+        border-width: thick;
+        border-style: dashed;
+        border-color: black;
+
+        border-radius: 20px;
+    }
+</style>
+```
+
+**모서리마다 둥글기를 다르게 적용하기** 👉 `border-radius` 속성에 크기 단위 4개를 입력하면 각 테두리에 서로 다른 둥글기가 적용됩니다. 
+
+```html
+<style>
+    .box {
+        border-width: thick;
+        border-style: dashed;
+        border-color: black;
+
+        /* border-radius: 왼쪽위 오른쪽위 오른쪽아래 왼쪽아래 */
+        border-radius: 50px 40px 20px 10px;
+    }
+</style>
+```
+
+---
+## 📝 section - 02 - 가시 속성
+
+## 📍 01 - display 속성
+
+**none 키워드 적용하기** 👉 `display` 속성에 none 키워드를 적용하면 태그가 화면에서 보이지 않습니다. 즉 중간에 있는 div 태그 전체가 화면에서 사라집니다.
+
+```html
+<head>
+    <title>Display</title>
+    <style>
+        #box {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <span>더미 객체</span>
+    <div id="box">대상 객체</div>
+    <span>더미 객체</span>
+</body>
+```
+
+**block 키워드 적용하기** 👉 `#box` 태그의 `display` 속성을 `black` 키워드로 바꿉니다. 실행 후 검사에게 각 태그를 클릭하면 해당 요소가 선택합니다. 
+
+```html
+<style>
+    #box {
+        display: block;
+    }
+</style>
+```
+
+**inline과 inline-block 키워드 비교하기** 👉 `div` 태그의 `display` 속성에 `inline`과 `inline-block`키워드를 지정합니다.
+
+```html
+<style>
+    #box {
+        display: inline;
+    }
+</style>
+```
+
+```html
+<style>
+    #box {
+        display: inline-block;
+    }
+</style>
+```
+인라인 형식과 인라인-블록 형식이 차이가 없어 보이지만 `width` 속성, `height` 속성, `margin` 속성을 사용하면 차이를 확인할 수 있습니다. 
+
+
+---
+## 📝 section - 03 - 글자 속성
+
+## 📍 01 - 글자 크기와 글꼴 지정
+
+**글자 크기와 글꼴 지정** 👉 `.a b c d` 속성을 사용하여 `p` 태그안에 `class="a"` 속성에 해당하는 **알파벳**을 입력하면 각각 해당하는 글자가 다양하게 변경된 것을 확인할 수 있습니다.
+
+```html
+<head>
+    <title>CSS3 Font Property</title>
+    <style>
+        .a { font-size: 32px; }
+        .b { font-size: 2em; }
+        .c { font-size: large; }
+        .d { font-size: small; }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum</h1>
+    <p class="a">Lorem ipsum</p>
+    <p class="b">Lorem ipsum</p>
+    <p class="c">Lorem ipsum</p>
+    <p class="d">Lorem ipsum</p> 
+</body>
+```
+
+---
