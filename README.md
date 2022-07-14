@@ -25,17 +25,15 @@
 
 ## 📝 Front-End
 * React.js 
-    * [01. React-준비중](https://github.com)
+    * [준비중](https://github.com)
 
 ## 📝 Back-end
-* Node.js / Express.js / Mysql 
-    * [01. Node-준비중](https://github.com)
-    * [02. Express-준비중](https://github.com)
-    * [03. Mysql-준비중](https://github.com)
+* JAVA 
+    * [이것이 자바다](https://github.com)
 
-## 📝 자격증 준비
+## 📝 자격증
 * 정보처리기사 
-    * [정처기-준비중](https://github.com)
+    * [실기](https://github.com)
     
 ## 📝 CS 공부
 * 준비중 
