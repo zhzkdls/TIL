@@ -196,7 +196,6 @@
 
 ```html
 <head>
-    <title>CSS3 Font Property</title>
     <style>
         .a { font-size: 32px; }
         .b { font-size: 2em; }
@@ -210,6 +209,113 @@
     <p class="b">Lorem ipsum</p>
     <p class="c">Lorem ipsum</p>
     <p class="d">Lorem ipsum</p> 
+</body>
+```
+
+**글꼴 1개 지정하기** 👉 일반적으로 한 단어로 된 글꼴 이름은 따옴표를 사용하지 않지만 두 단어 이상으로 된 글꼴 이름은 따옴표 사용을 추천합니다.
+
+```html
+<head>
+    <style>
+        .font_arial { font-family: Arial; }
+        .font_roman { font-family: 'Times New Roman'; }
+    </style>
+</head>
+<body>
+    <h1 class="font_arial">Lorem ipsum</h1>
+    <p class="font_roman">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada felis id massa adipiscing eget pellentesque ipsum lacinia. In orci massa, venenatis quis ultrices ac, accumsan vitae nunc. Sed eget pellentesque enim. Maecenas eros risus, hendrerit eget lacinia nec, mollis nec velit. Mauris sem mi, molestie sed bibendum eu, blandit et ante. Pellentesque vel mauris et mauris ornare pharetra. Etiam scelerisque pulvinar diam posuere ultrices. Duis et enim at velit ultricies cursus a at felis. Phasellus sit amet est hendrerit lorem convallis consequat ac ut massa. Aliquam luctus porttitor lacus id hendrerit. Nulla facilisi. Aliquam dictum tempus augue, eu tempor dui varius et. In pretium ultricies dapibus.</p>
+</body>
+```
+
+---
+## 📍 02 - 글자 정렬 지정
+
+**글자 정렬** 👉 `text-align` 속성은 글자 정렬을 지정합니다.
+
+```html
+<head>
+    <title>CSS3 Font Property</title>
+    <style>
+        .font_big { font-size: 2em; }
+        .font_italic { font-style: italic; }
+        .font_bold { font-weight: bold; }
+        .font_center { text-align: center; }
+        .font_right { text-align: right; }
+    </style>
+</head>
+<body>
+    <p class="font_big font_italic font_bold font_center">Lorem ipsum dolor amet</p>
+    <p class="font_bold font_right">2019.07.10</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada felis id massa adipiscing eget pellentesque ipsum lacinia. In orci massa, venenatis quis ultrices ac, accumsan vitae nunc. Sed eget pellentesque enim. Maecenas eros risus, hendrerit eget lacinia nec, mollis nec velit. Mauris sem mi, molestie sed bibendum eu, blandit et ante. Pellentesque vel mauris et mauris ornare pharetra. Etiam scelerisque pulvinar diam posuere ultrices. Duis et enim at velit ultricies cursus a at felis. Phasellus sit amet est hendrerit lorem convallis consequat ac ut massa. Aliquam luctus porttitor lacus id hendrerit. Nulla facilisi. Aliquam dictum tempus augue, eu tempor dui varius et. In pretium ultricies dapibus.</p>
+</body>
+```
+
+---
+## 📍 03 - 글자를 수직 중앙 정렬
+
+**글자 높이를 지정하는 line-height 속성**을 사용해 글자를 수직 중앙 정렬합니다.
+<br>
+
+**간단한 버튼 만들기** 👉 글자가 수평으로는 중앙 정렬되지만 수직으로는 중앙 정렬되지 않습니다. **CSS**에는 `block`속성이 있는 태그에 수직 정렬을 지정할 수 있는 스타일 속성이 없기 떄문입니다.
+
+```html
+<head>
+    <style>
+        .font_big { font-size: 2em; }
+        .font_italic { font-style: italic; }
+        .font_bold { font-weight: bold; }
+        .font_center { text-align: center; }
+
+        .button {
+            width: 150px;
+            height: 70px;
+            background-color: #FF6A00;
+            border: 10px solid #FFFFFF;
+            border-radius: 30px;
+            box-shadow: 5px 5px 5px #A9A9A9;
+        }
+
+        .button > a {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="button">
+        <a href="#" class="font_big font_italic font_bold font_center">Click</a>
+    </div>
+</body>
+```
+
+**글자를 수직 중앙 정렬하기** 👉 글짜를 감싸는 박스의 높이와 크기가 같은 `70px`로 `line-height`속성을 지정하면 실행 결과처럼 글자가 수직으로 중앙 정렬됩니다.
+
+```html
+<head>
+    <style>
+        .font_big { font-size: 2em; }
+        .font_italic { font-style: italic; }
+        .font_bold { font-weight: bold; }
+        .font_center { text-align: center; }
+
+        .button {
+            width: 150px;
+            height: 70px;
+            background-color: #FF6A00;
+            border: 10px solid #FFFFFF;
+            border-radius: 30px;
+            box-shadow: 5px 5px 5px #A9A9A9;
+        }
+
+        .button > a {
+            display: block;
+            line-height: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div class="button">
+        <a href="#" class="font_big font_italic font_bold font_center">Click</a>
+    </div>
 </body>
 ```
 
