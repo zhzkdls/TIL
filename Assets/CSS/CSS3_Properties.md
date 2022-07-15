@@ -6,7 +6,7 @@
 
 * **width 와 heigh 속성 적용하기** 👉 `div` 태그로 만든 박스의 너비와 높이가 `100px`로 지정합니다.
 
- * **소스코드**[ ✍ ](https://github.com/zhzkdls/TIL/blob/main/Assets/CSS/Step01/Margin_and_padding_Properties.html)
+ * **소스코드**[ ✍ ](https://github.com/zhzkdls/TIL/blob/main/Assets/CSS/Margin_and_padding_Properties.html)
  
     #### margin 속성과 padding 속성의 방향 적용 
     |속성|설명|
