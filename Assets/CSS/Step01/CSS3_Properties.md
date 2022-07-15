@@ -318,3 +318,147 @@
 ```
 
 ---
+## 📝 section - 04 - 위치 속성
+
+## 📍 01 - Position 속성
+
+* **absolut 키워드 적용하기** 👉 `box` 클래스르 가지는 `div` 태그의 `position` 속성에 `absolut` 키워드를 적용해서 코드를 작성합니다. 실행 결과는 웹 브라우저에 따라 약간 다르게 나타납니다. 미세한 버전 차이에 따라 **파란색 상자만** 보이거나 **상자 3개**가 모두 보입니다.
+
+#### position 속성과 키워드 
+    |키워드|설명|
+    |-----|-----------|
+    |absolut|절대 위치 좌표 설정|
+    |fixed|화면을 기준으로 절대 위치 좌표 설정|
+    |relative|초기 위치에서 상하좌우로 위치 이동|
+    |static|위쪽에서 아래쪽으로 순서대로 배치|
+
+```html
+<head>
+    <style>
+        .box { 
+            width: 100px; height: 100px; 
+            position: absolute;
+        }
+        .box:nth-child(1) { background-color: red; }
+        .box:nth-child(2) { background-color: green; }
+        .box:nth-child(3) { background-color: blue; }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+```
+
+* **left 속성과 top 속성 적용하기** 👉 모든 웹 브라우저의 출력 방식을 동일하려면 `left` 속성과 `top` 속성을 적용해야 합니다. 실행한 결과를 살펴보면 `빨간색 상자`가 **맨 뒤쪽**에 있고, `파란색 상자`가 **맨 앞쪽**에 있습니다. 기본적으로 뒤쪽에 작성한 코드 태그가 상위에 올라갑니다.
+
+```html
+<style>
+        .box { 
+            width: 100px; height: 100px;
+            position: absolute;
+        }
+        .box:nth-child(1) {
+            background-color: red;
+            left: 10px; top: 10px;
+        }
+        .box:nth-child(2) {
+            background-color: green;
+            left: 50px; top: 50px;
+        }
+        .box:nth-child(3) {
+            background-color: blue;
+            left: 90px; top: 90px;
+        }
+</style>
+```
+
+* **z-index 속성 적용하기** 👉 실행한 결과에서 도형 순서를 변경하고 싶을 때는 `z-index` 속성을 사용합니다. `z-index` 속성에 숫자를 입력하면 숫자가 클수록 앞에 위치합니다. 
+
+
+```html
+<style>
+        .box { 
+            width: 100px; height: 100px; 
+            position: absolute;
+        }
+        .box:nth-child(1) {
+            background-color: red;
+            left: 10px; top: 10px;
+
+            z-index: 100;
+        }
+        .box:nth-child(2) {
+            background-color: green;
+            left: 50px; top: 50px;
+
+            z-index: 10;
+        }
+        .box:nth-child(3) { 
+            background-color: blue;
+            left: 90px; top: 90px;
+
+            z-index: 1;
+        }
+</style> 
+```
+
+---
+## 📍 02 - Overflow 속성
+
+* **hidden 키워드 적용하기** 👉 실행 결과를 보면 색상이 적용된 사각형이 부모의 범위를 벗어나 있습니다. 이러한 `div` 태그의 `overflow` 속성에 hidden 키워드를 입력하면 부모 영역을 벗어난 부분을 잘라 모두 감춤니다.
+
+#### Overflow 속성과 키워드 
+    |키워드|설명|
+    |-----|-----------|
+    |hidden|영역을 벗어나는 부분 감춤|
+    |scroll|영역을 벗어나는 부분을 스크롤로 만듦|
+
+```html
+<head>
+    <title>CSS3 Property Basic</title>
+    <style>
+        .box { 
+            width: 100px; height: 100px; 
+            position: absolute;
+        }
+        .box:nth-child(1) {
+            background-color: red;
+            left: 10px; top: 10px;
+
+            z-index: 100;
+        }
+        .box:nth-child(2) {
+            background-color: green;
+            left: 50px; top: 50px;
+
+            z-index: 10;
+        }
+        .box:nth-child(3) { 
+            background-color: blue;
+            left: 90px; top: 90px;
+
+            z-index: 1; 
+        }
+        body > div {
+            width: 400px; height: 100px;
+            border: 3px solid black;
+            
+            position: relative;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor amet</h1>
+    <div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <h1>Lorem ipsum dolor amet</h1>
+</body>
+```
+
+---
