@@ -3,7 +3,7 @@
 
 
 ## 📝 C언어
- #### [section-01]()
+ #### [C 언어_컴파일러와 인터프리터, 변수](https://github.com/zhzkdls/TIL/blob/main/license/Language/C/C.md)
  
  #### [section-02]()
  
