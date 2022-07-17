@@ -29,12 +29,11 @@
 
 ## 📝 Back-end
 * JAVA 
-    * [이것이 자바다](https://github.com)
-    * [Do it ! 자바 프로그래밍 입문](https://github.com)
+    * [준비중](https://github.com)
 
 ## 📝 자격증
 * 정보처리기사 
-    * [실기](https://github.com)
+    * [실기](https://github.com/zhzkdls/TIL/blob/main/license/Language/Study.md)
     
 ## 📝 CS 공부
 * 준비중 
