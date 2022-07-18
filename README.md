@@ -11,16 +11,13 @@
 * HTML5 
     * [HTML5 웹 프로그래밍 입문](https://github.com/zhzkdls/TIL/blob/main/Assets/Study.md)
     * [STEP.02-준비중](https://github.com)
-    * [STEP.03-준비중](https://github.com)
   
     
 * CSS3  
     * [STEP.01-준비중](https://github.com)
-    * [STEP.02-준비중](https://github.com)
 
 * JAVASCRIPT  
     * [STEP.01-준비중](https://github.com)
-    * [STEP.02-준비중](https://github.com)
   
 
 ## 📝 Front-End
