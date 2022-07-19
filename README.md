@@ -11,22 +11,6 @@
 * HTML5 
     * [HTML5 웹 프로그래밍 입문](https://github.com/zhzkdls/TIL/blob/main/Assets/Study.md)
     * [STEP.02-준비중](https://github.com)
-  
-    
-* CSS3  
-    * [STEP.01-준비중](https://github.com)
-
-* JAVASCRIPT  
-    * [STEP.01-준비중](https://github.com)
-  
-
-## 📝 Front-End
-* React.js 
-    * [준비중](https://github.com)
-
-## 📝 Back-end
-* JAVA 
-    * [준비중](https://github.com)
 
 ## 📝 자격증
 * 정보처리기사 
