@@ -7,19 +7,22 @@
 
 ## 📌 목차
 
-## 📝 Web publishing
+## Front-end
 * HTML5 
     * [HTML5 웹 프로그래밍 입문](https://github.com/zhzkdls/TIL/blob/main/Assets/Study.md)
     * [STEP.02-준비중](https://github.com)
 
-## 📝 자격증
+## 자격증
 * 정보처리기사 
     * [실기](https://github.com/zhzkdls/TIL/blob/main/license/Language/Study.md)
     
-## 📝 CS 공부
+## CS 공부
 * 준비중 
     * [01-준비중](https://github.com)
 
+## ETC
+* Algorithms
+    * [기초알고리즘](https://github.com)
 
 
 
