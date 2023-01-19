@@ -21,8 +21,8 @@
     * [01-준비중](https://github.com)
 
 ## ETC
-* Algorithms
-    * [기초알고리즘](https://github.com)
+* 알고리즘
+    * [코딩테스트연습](https://github.com/zhzkdls/TIL/blob/main/알고리즘/알고리즘%20공부.md)
 
 
 
