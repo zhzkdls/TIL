@@ -15,8 +15,6 @@ const nums = [1, 2, 3, 6, 6, 7, 2, 2, 8, 9];
 // 1. 중복된 2번과 6번이 제거됨.
 const uniqueNums = [...new Set(nums)];
 
-// 2.
-
 console.log(uniqueNums);
 
 ```
